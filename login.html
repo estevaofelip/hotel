@@ -5,40 +5,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login do Cliente</title>
+    <link rel="stylesheet" href="estilo.css/stylee.css">
+    <style>
+        body {
+            text-align: center;
+            background-color: rgb(11, 11, 10);
+            border: 26px solid gold;
+            margin: 0;
+            min-height: 100vh;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        
+        .caixa-login {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            max-width: 400px;
+            width: 100%;
+            margin: 20px auto;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.7);
+            box-sizing: border-box;
+        }
+
+        .caixa-login input {
+            margin-top: 8px;
+            padding: 10px;
+            width: 90%;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .caixa-login button {
+            background-color: #0056b3;
+            color: white;
+            font-weight: bold;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 95%;
+            margin-top: 15px;
+            transition: background-color 0.3s;
+        }
+
+        .caixa-login button:hover {
+            background-color: #004085;
+        }
+
+        .caixa-login a {
+            color: #B22222;
+            text-decoration: none;
+            font-size: 14px;
+        }
+    </style>
 </head>
 
-<body
-    style="text-align: center; background-color: rgb(11, 11, 10); border: 26px solid gold; margin: 0; min-height: 100vh; box-sizing: border-box; font-family: Arial, sans-serif;">
+<body>
     
     <h1 style="color: white; margin-bottom: 0;">HotelSystemy</h1>
     <h1 style="color: gold; margin-top: 5px;">Hotel</h1>
-
     
-    <div
-        style="background-color: #ffffff; padding: 30px; border-radius: 10px; max-width: 400px; margin: 20px auto; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.7);">
 
+    <div class="caixa-login">
         <form action="" method="post">
 
-            <h5 style="color: #333333;">
+            <h5 style="color: #333333; margin: 10px 0;">
                 <label for="email">DIGITE SEU GMAIL:</label><br>
-                <input type="email" name="email" id="email" style="margin-top: 8px; padding: 8px; width: 90%; border: 1px solid #ccc; border-radius: 4px;">
+                <input type="email" name="email" id="email">
             </h5>
             
-            <h5 style="color: #333333;">
+            <h5 style="color: #333333; margin: 10px 0;">
                 <label for="senha">DIGITE SUA SENHA:</label><br>
-                <input type="password" name="senha" id="senha" style="margin-top: 8px; padding: 8px; width: 90%; border: 1px solid #ccc; border-radius: 4px;">
+                <input type="password" name="senha" id="senha">
             </h5>
-
             
-            <button type="submit" style="background-color: gold; color: black; font-weight: bold; padding: 12px 20px; border: none; border-radius: 5px; cursor: pointer; width: 95%; margin-top: 10px;">Enviar</button>
+            <button type="submit">Enviar</button>
             
             <br><br>
             
-            
-            <a href="inde.html" style="color: #B22222; text-decoration: none; font-size: 14px;">Clique aqui para ir para a tela de cadastro</a>
+            <a href="inde.html">Clique aqui para ir para a tela de cadastro</a>
             
         </form>
-
     </div>
 
 </body>
