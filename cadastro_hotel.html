@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel</title>
+</head>
+
+<body style="text-align: center; font-family: Arial, sans-serif; background: linear-gradient(135deg, #1e1b4b, #312e81, #1e40af); color: white; min-height: 100vh; margin: 0;">
+    <h1 style="margin-top: 50px;color: yellow;">VagaViva</h1>
+    <br>
+    
+    <form action="salvar_hotel.php" style="border: 2px solid #ffffff; border-radius: 15px; padding: 40px 20px; max-width: 400px; margin: 0 auto; background-color: rgba(255, 255, 255, 0.1);">
+        
+       
+        <h4 style="color: #ffffff; margin: 10px 0; text-align: center;">
+            <label for="texto">DIGITE O NOME DO HOTEL:</label><br>
+            <input type="text" name="texto" id="texto" placeholder="Nome do hotel" required style="padding: 8px; width: 80%; margin-top: 10px; border-radius: 5px; border: none;">
+        </h4>
+  
+        <h4 style="color: #ffffff; margin: 10px 0; text-align: center;">
+            <label for="cidade">CIDADE:</label><br>
+            <input type="text" name="cidade" id="cidade" placeholder="Cidade do hotel escolhido" required style="padding: 8px; width: 80%; margin-top: 10px; border-radius: 5px; border: none;">
+        </h4>
+      
+        <h4 style="color: #ffffff;">Estrelas:</h4>
+        <select name="avaliacao" id="avaliacao" style="text-align: center; padding: 8px; font-size: 16px; border-radius: 5px; border: none; width: 80%;">
+            <option value="">Classificação em estrelas</option>
+            <option value="1">⭐ </option>
+            <option value="2">⭐⭐ </option>
+            <option value="3">⭐⭐⭐ </option>
+            <option value="4">⭐⭐⭐⭐ </option>
+            <option value="5">⭐⭐⭐⭐⭐ </option>
+        </select>
+        
+        <br><br>
+        <!-- Fundo do botão alterado de verde para um tom de azul corporativo clássico -->
+      <button type="submit" style="padding: 10px 20px; font-size: 16px; cursor: pointer; border-radius: 5px; border: none; background-color: #2563eb; color: white; margin-top: 20px; font-weight: bold;">Salvar Hotel</button>
+    <br>
+<a href="inde.html" style="color: red;">Clique aqui para voltar para a tela de cadastro</a>
+
+    
+    </form>
+
+
+</body>
+
+</html>
