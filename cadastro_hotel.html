@@ -5,9 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hotel</title>
-      <link rel="stylesheet" href="estilo.css/style4.css">
+    <link rel="stylesheet" href="estilo.css/style4.css">
     <style>
-
         h1 {
             margin-top: 50px;
             color: yellow;
@@ -59,7 +58,7 @@
             transition: all 0.3s ease;
         }
 
-        button:hover{
+        button:hover {
             background-color: #1e1b4b;
             transform: scale(1.09);
             transition: all 0.3s ease;
@@ -73,18 +72,18 @@
     <br>
     <br>
     <form action="salvar_hotel.php" method="post">
-        
-       
+
+
         <h4>
             <label for="texto">DIGITE O NOME DO HOTEL 🏨:</label><br>
             <input type="text" name="texto" id="texto" placeholder="Nome do hotel" required>
         </h4>
-  
+
         <h4>
             <label for="cidade">CIDADE 🌃:</label><br>
             <input type="text" name="cidade" id="cidade" placeholder="Cidade do hotel escolhido" required>
         </h4>
-      
+
         <h4>Estrelas 🌟:</h4>
         <select name="avaliacao" id="avaliacao">
             <option value="">Classificação em estrelas</option>
@@ -92,15 +91,30 @@
             <option value="2">⭐⭐ </option>
             <option value="3">⭐⭐⭐ </option>
             <option value="4">⭐⭐⭐⭐ </option>
-            <option value="5">⭐⭐⭐⭐⭐  </option>
+            <option value="5">⭐⭐⭐⭐⭐ </option>
         </select>
-        
+
+        <h4>
+            <label for="cidade">email 🌃:</label><br>
+            <input type="email" name="email" id="email" placeholder="digite seu email" required>
+        </h4>
+
+
+        <h4>
+            <label for="cidade">senha 🌃:</label><br>
+            <input type="password" name="senha" id="senha" placeholder="diite sua senha" required>
+        </h4>
+
+
+
+
+
         <br><br>
-      
-      <button type="submit">Salvar Hotel</button>
-    <br>
-     </form>
- <a href="inde.html" style="color: red;">Clique aqui para ir para a tela de cadastro</a>
+
+        <button type="submit">Salvar Hotel</button>
+        <br>
+    </form>
+    <a href="inde.html" style="color: red;">Clique aqui para ir para a tela de cadastro</a>
 
 
 </body>
