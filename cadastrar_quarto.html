@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+     <link rel="stylesheet" href="estilo.css/styleeeee.css">
+</head>
+
+<body style="text-align: center;">
+
+    <h1 style="color: white;">Formulário de Cadastro de Quartos</h1>
+
+    <form action="salvar_quarto.php" method="post">
+
+
+        <h4>
+            <label for="texto" style="color: white;">Id do hotel 🏨:</label><br>
+            <input type="number" name="id_hotel" id="id_hotel" placeholder=" Digite seu id" required>
+        </h4>
+
+        <h4>
+            <label for="cidade" style="color: white;">Número do Quarto:</label><br>
+            <input type="text" name="numero_quarto" id="numero_quarto" placeholder="número do quarto" required>
+        </h4>
+
+
+
+        <h4 style="color: white;">Tipo de quarto:</h4>
+        <select name="tipo_quarto" id="tipo_quarto">
+            
+            <option value="Solteiro">Solteiro </option>
+            <option value="Casal">Casal </option>
+            <option value="Suíte de Luxo">Suíte de Luxo </option>
+
+        </select>
+
+
+        <h4>
+            <label for="cidade" style="color: white;">Preço da diaria</label><br>
+            <input type="number" step="0.01" name="preco_diaria" id="preco_diaria" placeholder="digite o preço" required>
+        </h4>
+
+<button>Salvar quarto</button>
+<br>
+<a href="logout_hotel.php" style="color: white;">Clique para deslogar do sistema</a>
+
+
+    </form>
+
+
+</body>
+
+</html>
