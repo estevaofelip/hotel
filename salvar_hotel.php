@@ -8,8 +8,10 @@ $avaliacao = $_POST['avaliacao'];
 $email = $_POST['email'];
 $senha = $_POST['senha'];
 
+$senha_hash = password_hash($senha, PASSWORD_DEFAULT);
+
 $sql = "INSERT INTO hoteis (nome,cidade,estrelas,email,senha)
-VALUES('$texto','$cidade','$avaliacao','$email','$senha')";
+VALUES('$texto','$cidade','$avaliacao','$email','$senha_hash')";
 
 $resultado = mysqli_query($conexao,$sql);
 
